@@ -11,6 +11,7 @@
 		CB6EA7582C1843CB004103AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EA7572C1843CB004103AA /* ContentView.swift */; };
 		CB6EA75A2C1843CD004103AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6EA7592C1843CD004103AA /* Assets.xcassets */; };
 		CB6EA75D2C1843CD004103AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6EA75C2C1843CD004103AA /* Preview Assets.xcassets */; };
+		CB6EA7652C1844CF004103AA /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = CB6EA7642C1844CF004103AA /* MarkdownUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB6EA7652C1844CF004103AA /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = X16CircularRefTest;
+			packageProductDependencies = (
+				CB6EA7642C1844CF004103AA /* MarkdownUI */,
+			);
 			productName = X16CircularRefTest;
 			productReference = CB6EA7522C1843CB004103AA /* X16CircularRefTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = CB6EA7492C1843CB004103AA;
+			packageReferences = (
+				CB6EA7632C1844CF004103AA /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+			);
 			productRefGroup = CB6EA7532C1843CB004103AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB6EA7632C1844CF004103AA /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB6EA7642C1844CF004103AA /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB6EA7632C1844CF004103AA /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB6EA74A2C1843CB004103AA /* Project object */;
 }
